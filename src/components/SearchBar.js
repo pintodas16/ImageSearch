@@ -1,18 +1,19 @@
 import React from "react";
 import { useState } from "react";
 
-function SearchBar({ onClick }) {
+function SearchBar({ onSubmit }) {
   const [term, setTerm] = useState("");
+
   const handleChange = (event) => {
-    // console.log(event.target.value);
     setTerm(event.target.value);
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    // console.log(term);
-    onClick(term);
+    onSubmit(term);
+    console.log(`cicked ${term}`);
     setTerm("");
   };
+
   return (
     <div className="form-container">
       <form className="form">
