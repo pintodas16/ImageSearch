@@ -5,7 +5,7 @@ import ImageList from "./components/imagelist";
 import fetchImage from "./api";
 
 function App() {
-  const [images, setImages] = useState("");
+  const [images, setImages] = useState([]);
   const handleSubmit = async (term) => {
     // console.log(term);
     const result = await fetchImage(term);

@@ -7,6 +7,7 @@ const fetchImage = async (term) => {
     },
     params: {
       query: term,
+      per_page: 12,
     },
   });
   // console.log(response.data.results);

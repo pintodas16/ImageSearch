@@ -9,7 +9,7 @@ html {
   font-size: 66.7%;
 }
 body {
-  background: #583030;
+  background: #b6b6b6;
 }
 .form-container {
   display: flex;
@@ -22,7 +22,8 @@ body {
   border-radius: 30px;
   display: flex;
   align-items: center;
-  transition: all 1s;
+  transition: all 0.5s;
+  /* background: #fff; */
 }
 .form:hover,
 .form:active {
@@ -39,17 +40,18 @@ body {
 
 .btn {
   padding: 0.5rem 2rem;
-  background: green;
+  background: #fff;
   border-radius: 25px;
   transition: all 1s;
-  border: 1px solid transparent;
+  border: 1px solid black;
+  color: black;
   /* transition: all 0.3s; */
 }
 .btn:hover,
 .btn:active {
-  background: #fff;
-  color: black;
-  border: 1px solid black;
+  background: #b6b6b6;
+  color: #fff;
+  border: 1px solid #fff;
 }
 .image-container {
   margin: 0 auto;
@@ -60,7 +62,7 @@ body {
 }
 .images {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   flex-wrap: wrap;
   /* border: 1px solid green; */
   border-radius: 10px;
