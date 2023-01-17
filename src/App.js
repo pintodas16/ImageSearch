@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import SearchBar from "./components/SearchBar";
 import ImageList from "./components/imagelist";
+import NavLink from "./components/navLink";
 import fetchImage from "./api";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
   return (
     <div>
       <SearchBar onSubmit={handleSubmit} />
+      <NavLink onSubmit={handleSubmit} />
       <ImageList images={images} />
     </div>
   );

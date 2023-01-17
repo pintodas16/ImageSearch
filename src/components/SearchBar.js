@@ -25,7 +25,7 @@ function SearchBar({ onSubmit }) {
           placeholder="Enter a name ..."
         />
         <input
-          className="input-field btn"
+          className="btn"
           type="submit"
           value="submit"
           onClick={handleSubmit}
